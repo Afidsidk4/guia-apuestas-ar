@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .betsson-gradient {
-            background: linear-gradient(135deg, rgba(255, 102, 0, 0.92) 0%, rgba(255, 133, 51, 0.92) 100%);
+            background: linear-gradient(135deg, rgba(255, 102, 0, 0.95) 0%, rgba(255, 140, 51, 0.95) 100%);
         }
-        .hero-bg {
-            /* Imagen de fondo de estadio de fútbol con overlay oscuro para mantener la legibilidad */
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1600&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(rgba(255, 102, 0, 0.15) 1px, transparent 1px), radial-gradient(rgba(255, 102, 0, 0.1) 1px, #0f172a 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
         }
     </style>
 </head>
@@ -38,38 +38,41 @@
     <!-- Contenido Principal -->
     <main class="max-w-4xl mx-auto px-4 py-8 flex-grow">
 
-        <!-- Banner Principal con Fondo Deportivo y Estilo Betsson -->
-        <section class="hero-bg rounded-2xl p-6 sm:p-10 mb-8 shadow-xl text-center text-white relative overflow-hidden border border-slate-700">
-            <span class="bg-orange-500/80 text-white text-xs font-semibold px-3.5 py-1 rounded-full uppercase tracking-wider border border-orange-400/40 inline-block mb-3 shadow-sm">
+        <!-- Banner Principal con Estilo Deportivo y Toques Betsson -->
+        <section class="hero-pattern rounded-2xl p-6 sm:p-10 mb-8 shadow-xl text-center text-white relative overflow-hidden border border-slate-700">
+            <div class="absolute -right-6 -bottom-6 opacity-10 text-9xl text-orange-500 pointer-events-none">
+                <i class="fa-solid fa-futbol"></i>
+            </div>
+            <span class="bg-orange-500/90 text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider border border-orange-400/40 inline-block mb-3 shadow-sm">
                 <i class="fa-solid fa-futbol mr-1"></i> Partidos de la Semana
             </span>
-            <h1 class="text-2xl sm:text-4xl font-extrabold mb-3 leading-tight">
+            <h1 class="text-3xl sm:text-5xl font-extrabold mb-4 leading-tight">
                 Viví la Pasión del Fútbol con Ventaja y Seguridad
             </h1>
-            <p class="text-slate-200 text-sm sm:text-base max-w-2xl mx-auto mb-6">
+            <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto mb-6">
                 Descubre las plataformas autorizadas, reclama tu beneficio exclusivo de bienvenida y haz tus jugadas con cuotas en pesos para el gran partido.
             </p>
-            <div class="flex flex-wrap justify-center gap-2 text-xs text-slate-200">
-                <span class="bg-slate-900/60 px-3 py-1 rounded-md border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Cuotas en ARS</span>
-                <span class="bg-slate-900/60 px-3 py-1 rounded-md border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Retiros Garantizados</span>
-                <span class="bg-slate-900/60 px-3 py-1 rounded-md border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Licencia Oficial</span>
+            <div class="flex flex-wrap justify-center gap-2.5 text-xs sm:text-sm text-slate-200">
+                <span class="bg-slate-900/80 px-3.5 py-1.5 rounded-md border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Cuotas en ARS</span>
+                <span class="bg-slate-900/80 px-3.5 py-1.5 rounded-md border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Retiros Garantizados</span>
+                <span class="bg-slate-900/80 px-3.5 py-1.5 rounded-md border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Licencia Oficial</span>
             </div>
         </section>
 
-        <!-- Sección Informativa sobre Juego Legal -->
-        <section class="bg-white border border-slate-200/80 rounded-2xl p-6 mb-8 shadow-sm">
-            <div class="flex items-start space-x-4">
-                <div class="bg-orange-50 text-orange-600 p-3 rounded-xl shrink-0 mt-1 border border-orange-100">
-                    <i class="fa-solid fa-scale-balanced text-xl"></i>
+        <!-- Sección Informativa sobre Juego Legal con texto ampliado -->
+        <section class="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 mb-8 shadow-sm">
+            <div class="flex items-start space-x-4 sm:space-x-5">
+                <div class="bg-orange-50 text-orange-600 p-3.5 rounded-xl shrink-0 mt-1 border border-orange-100">
+                    <i class="fa-solid fa-scale-balanced text-2xl"></i>
                 </div>
-                <div class="space-y-3">
-                    <h2 class="text-base sm:text-lg font-bold text-slate-900">
+                <div class="space-y-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                         En esta pagina reunimos las plataformas oficiales habilitadas legalmente por el gobierno.
                     </h2>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
                         Jugar en una plataforma legal, no solo implica el respaldo de una empresa reconocida en el sector, sino que ademas brinda transparencia para tus apuestas, y garantía total de pago, sin importar cuanto ganes.
                     </p>
-                    <p class="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed">
+                    <p class="text-slate-800 text-sm sm:text-base font-semibold leading-relaxed">
                         Cada uno de los sitios a continuacion esta oficialmente HABILITADO y AUDITADO por el gobierno y aseguran tu apuesta y tus beneficios.
                     </p>
                 </div>
@@ -91,18 +94,18 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <h3 class="font-bold text-lg text-slate-900">Betsson</h3>
-                            <span class="bg-orange-100 text-orange-700 text-[10px] px-2 py-0.5 rounded font-semibold">Destacado</span>
+                            <span class="bg-orange-100 text-orange-700 text-[10px] sm:text-xs px-2 py-0.5 rounded font-semibold">Destacado</span>
                         </div>
-                        <p class="text-slate-500 text-xs sm:text-sm mt-0.5">Bono exclusivo de bienvenida para nuevos usuarios.</p>
+                        <p class="text-slate-600 text-sm mt-0.5">Bono exclusivo de bienvenida para nuevos usuarios.</p>
                     </div>
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1.5">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BETSSON" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-2.5 px-6 rounded-xl text-center text-sm shadow-md transition flex items-center justify-center space-x-2">
+                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-3 px-6 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
                         <span>Reclamar Bono</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <span class="text-[10px] text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
+                    <span class="text-xs text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
                 </div>
             </div>
 
@@ -115,18 +118,18 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <h3 class="font-bold text-lg text-slate-900">Betano</h3>
-                            <span class="bg-slate-100 text-slate-700 text-[10px] px-2 py-0.5 rounded font-semibold">Cuotas Potenciadas</span>
+                            <span class="bg-slate-100 text-slate-700 text-[10px] sm:text-xs px-2 py-0.5 rounded font-semibold">Cuotas Potenciadas</span>
                         </div>
-                        <p class="text-slate-500 text-xs sm:text-sm mt-0.5">Plataforma líder para fútbol local e internacional.</p>
+                        <p class="text-slate-600 text-sm mt-0.5">Plataforma líder para fútbol local e internacional.</p>
                     </div>
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1.5">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BETANO" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-2.5 px-6 rounded-xl text-center text-sm shadow-md transition flex items-center justify-center space-x-2">
+                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-3 px-6 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
                         <span>Reclamar Bono</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <span class="text-[10px] text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
+                    <span class="text-xs text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
                 </div>
             </div>
 
@@ -139,18 +142,18 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <h3 class="font-bold text-lg text-slate-900">Betwarrior</h3>
-                            <span class="bg-red-50 text-red-700 text-[10px] px-2 py-0.5 rounded font-semibold">100% Local</span>
+                            <span class="bg-red-50 text-red-700 text-[10px] sm:text-xs px-2 py-0.5 rounded font-semibold">100% Local</span>
                         </div>
-                        <p class="text-slate-500 text-xs sm:text-sm mt-0.5">Adaptado al mercado argentino con pagos directos.</p>
+                        <p class="text-slate-600 text-sm mt-0.5">Adaptado al mercado argentino con pagos directos.</p>
                     </div>
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1.5">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BETWARRIOR" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-2.5 px-6 rounded-xl text-center text-sm shadow-md transition flex items-center justify-center space-x-2">
+                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-3 px-6 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
                         <span>Reclamar Bono</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <span class="text-[10px] text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
+                    <span class="text-xs text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
                 </div>
             </div>
 
@@ -163,39 +166,39 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <h3 class="font-bold text-lg text-slate-900">Bplay</h3>
-                            <span class="bg-cyan-50 text-cyan-700 text-[10px] px-2 py-0.5 rounded font-semibold">Regulado BA/CABA</span>
+                            <span class="bg-cyan-50 text-cyan-700 text-[10px] sm:text-xs px-2 py-0.5 rounded font-semibold">Regulado BA/CABA</span>
                         </div>
-                        <p class="text-slate-500 text-xs sm:text-sm mt-0.5">Experiencia sólida y regulada en la región.</p>
+                        <p class="text-slate-600 text-sm mt-0.5">Experiencia sólida y regulada en la región.</p>
                     </div>
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1.5">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BPLAY" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-2.5 px-6 rounded-xl text-center text-sm shadow-md transition flex items-center justify-center space-x-2">
+                       class="w-full sm:w-auto betsson-gradient hover:opacity-95 text-white font-bold py-3 px-6 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
                         <span>Reclamar Bono</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <span class="text-[10px] text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
+                    <span class="text-xs text-slate-400 text-center sm:text-right">Solo nuevos registros (+18)</span>
                 </div>
             </div>
 
         </section>
 
         <!-- Pasos Simples para Principiantes -->
-        <section class="mt-10 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <section class="mt-10 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
             <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4 flex items-center">
                 <i class="fa-solid fa-circle-question text-orange-600 mr-2"></i> ¿Cómo empezar de forma segura?
             </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-600">
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <span class="font-bold text-slate-900 block mb-1">1. Elige una plataforma</span>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm sm:text-base text-slate-700">
+                <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-100">
+                    <span class="font-bold text-slate-900 block mb-1.5">1. Elige una plataforma</span>
                     Selecciona tu opción oficial favorita del listado superior.
                 </div>
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <span class="font-bold text-slate-900 block mb-1">2. Regístrate gratis</span>
+                <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-100">
+                    <span class="font-bold text-slate-900 block mb-1.5">2. Regístrate gratis</span>
                     Crea tu cuenta oficial en menos de 2 minutos (exclusivo nuevos usuarios).
                 </div>
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <span class="font-bold text-slate-900 block mb-1">3. Activa tu beneficio</span>
+                <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-100">
+                    <span class="font-bold text-slate-900 block mb-1.5">3. Activa tu beneficio</span>
                     Realiza tu ingreso en pesos y aprovecha tu bono de bienvenida.
                 </div>
             </div>
@@ -204,7 +207,7 @@
     </main>
 
     <!-- Footer Institucional y Legal -->
-    <footer class="bg-white border-t border-slate-200 py-6 px-4 mt-12 text-center text-xs text-slate-500">
+    <footer class="bg-white border-t border-slate-200 py-6 px-4 mt-12 text-center text-xs sm:text-sm text-slate-500">
         <div class="max-w-4xl mx-auto space-y-2">
             <p>Este sitio es un recomendador de plataformas de juego legal y regulado en Argentina. Todas las marcas listadas operan con licencias oficiales correspondientes.</p>
             <p class="text-slate-700 font-semibold">+18 | El juego compulsivo es perjudicial para la salud y la familia. Juega con moderación.</p>
