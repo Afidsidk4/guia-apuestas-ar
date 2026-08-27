@@ -15,9 +15,9 @@
         .betsson-gradient:hover {
             background: linear-gradient(135deg, #e65c00 0%, #ff751a 100%);
         }
-        /* Imagen de fondo real de estadio de alta velocidad con capa oscura superpuesta */
+        /* Fondo aclarado (menos oscuro) para que resalte mucho mejor el texto del header */
         .hero-real-bg {
-            background: linear-gradient(rgba(11, 19, 36, 0.90), rgba(11, 19, 36, 0.85)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1400&q=80');
+            background: linear-gradient(rgba(11, 19, 36, 0.70), rgba(11, 19, 36, 0.60)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1400&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -41,24 +41,24 @@
     <!-- Contenido Principal -->
     <main class="max-w-3xl mx-auto px-4 py-6 flex-grow w-full">
 
-        <!-- Banner Principal con Imagen de Estadio Real de Fondo -->
+        <!-- Banner Principal con Fondo Aclarado estilo Landing Publicitaria -->
         <section class="hero-real-bg rounded-2xl p-6 sm:p-10 mb-6 shadow-xl text-center text-white relative overflow-hidden border border-slate-700">
-            <div class="inline-flex items-center space-x-2 bg-orange-500/90 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 shadow">
+            <div class="inline-flex items-center space-x-2 bg-orange-500/95 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 shadow">
                 <i class="fa-solid fa-fire text-amber-200"></i>
                 <span>Beneficios Exclusivos Activos</span>
             </div>
             
-            <h1 class="text-3xl sm:text-5xl font-black mb-3 tracking-tight leading-tight">
+            <h1 class="text-3xl sm:text-5xl font-black mb-3 tracking-tight leading-tight drop-shadow-md">
                 Viví la Pasión con Ventaja y Seguridad
             </h1>
             
-            <p class="text-slate-200 text-base sm:text-lg max-w-xl mx-auto mb-6 leading-relaxed">
+            <p class="text-slate-100 text-base sm:text-lg max-w-xl mx-auto mb-6 leading-relaxed drop-shadow">
                 Reclamá tu beneficio de bienvenida en los sitios autorizados y haz tus jugadas con cuotas en pesos.
             </p>
 
-            <div class="flex flex-wrap justify-center gap-2 text-xs sm:text-sm text-slate-300">
-                <span class="bg-slate-900/70 px-3 py-1.5 rounded-lg border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Retiros Rápidos</span>
-                <span class="bg-slate-900/70 px-3 py-1.5 rounded-lg border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> 100% Legal en ARS</span>
+            <div class="flex flex-wrap justify-center gap-2 text-xs sm:text-sm text-slate-200">
+                <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Retiros Rápidos</span>
+                <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> 100% Legal en ARS</span>
             </div>
         </section>
 
