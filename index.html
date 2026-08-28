@@ -21,6 +21,14 @@
             background-size: cover;
             background-position: center;
         }
+        /* Animación de parpadeo (prender y apagar) */
+        @keyframes parpadeo {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.98); }
+        }
+        .btn-parpadeante {
+            animation: parpadeo 1.2s infinite ease-in-out;
+        }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
@@ -53,7 +61,7 @@
             </h1>
             
             <p class="text-slate-100 text-base sm:text-lg max-w-xl mx-auto mb-6 leading-relaxed drop-shadow">
-                Reclamá tu beneficio de bienvenida en los sitios autorizados y haz tus jugadas con cuotas en pesos.
+                Regístrate ahora en los sitios autorizados y haz tus jugadas con cuotas en pesos.
             </p>
 
             <div class="flex flex-wrap justify-center gap-2 text-xs sm:text-sm text-slate-200">
@@ -104,8 +112,8 @@
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BETSSON" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
-                        <span>Reclamar Bono</span>
+                       class="w-full sm:w-auto betsson-gradient btn-parpadeante text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
+                        <span>Regístrate ahora</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                     <span class="text-[11px] text-slate-400 text-center sm:text-right">+18 | Aplican TyC</span>
@@ -128,8 +136,8 @@
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BETANO" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
-                        <span>Reclamar Bono</span>
+                       class="w-full sm:w-auto betsson-gradient btn-parpadeante text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
+                        <span>Regístrate ahora</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                     <span class="text-[11px] text-slate-400 text-center sm:text-right">+18 | Aplican TyC</span>
@@ -152,8 +160,8 @@
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BETWARRIOR" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
-                        <span>Reclamar Bono</span>
+                       class="w-full sm:w-auto betsson-gradient btn-parpadeante text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
+                        <span>Regístrate ahora</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                     <span class="text-[11px] text-slate-400 text-center sm:text-right">+18 | Aplican TyC</span>
@@ -176,8 +184,8 @@
                 </div>
                 <div class="w-full sm:w-auto flex flex-col sm:items-end gap-1">
                     <a href="AQUI_TU_ENLACE_DE_AFILIADO_BPLAY" target="_blank" rel="nofollow" 
-                       class="w-full sm:w-auto betsson-gradient text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
-                        <span>Reclamar Bono</span>
+                       class="w-full sm:w-auto betsson-gradient btn-parpadeante text-white font-bold py-3 px-7 rounded-xl text-center text-sm sm:text-base shadow-md transition flex items-center justify-center space-x-2">
+                        <span>Regístrate ahora</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                     <span class="text-[11px] text-slate-400 text-center sm:text-right">+18 | Aplican TyC</span>
