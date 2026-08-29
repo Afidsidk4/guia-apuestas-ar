@@ -15,12 +15,6 @@
         .betsson-gradient:hover {
             background: linear-gradient(135deg, #e65c00 0%, #ff751a 100%);
         }
-        /* Fondo aclarado estilo Landing Publicitaria */
-        .hero-real-bg {
-            background: linear-gradient(rgba(11, 19, 36, 0.85), rgba(11, 19, 36, 0.75)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1400&q=80');
-            background-size: cover;
-            background-position: center;
-        }
         /* Animación de parpadeo (prender y apagar) */
         @keyframes parpadeo {
             0%, 100% { opacity: 1; transform: scale(1); }
@@ -49,32 +43,9 @@
     <!-- Contenido Principal -->
     <main class="max-w-3xl mx-auto px-4 py-6 flex-grow w-full space-y-6">
 
-        <!-- Banner Principal con Fondo Aclarado y tu imagen de la chica integrada abajo a la derecha -->
-        <section class="hero-real-bg rounded-2xl p-6 sm:p-10 shadow-xl text-left text-white relative overflow-hidden border border-slate-700 flex flex-col md:flex-row items-center justify-between">
-            <div class="max-w-md z-10 space-y-4">
-                <div class="inline-flex items-center space-x-2 bg-orange-500/95 text-white text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow">
-                    <i class="fa-solid fa-fire text-amber-200"></i>
-                    <span>Beneficios Exclusivos Activos</span>
-                </div>
-                
-                <h1 class="text-3xl sm:text-4xl font-black tracking-tight leading-tight drop-shadow-md">
-                    Gana con tu conocimiento deportivo
-                </h1>
-                
-                <p class="text-slate-100 text-base sm:text-lg leading-relaxed drop-shadow">
-                    Viví tu Pasión en forma legal y segura
-                </p>
-
-                <div class="flex flex-wrap gap-2 text-xs sm:text-sm text-slate-200 pt-1">
-                    <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> Retiros Rápidos</span>
-                    <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-slate-700"><i class="fa-solid fa-check text-orange-400 mr-1"></i> 100% Legal en ARS</span>
-                </div>
-            </div>
-
-            <!-- TU IMAGEN EXACTA DE LA CHICA ABAJO A LA DERECHA -->
-            <div class="mt-6 md:mt-0 md:absolute md:right-4 md:bottom-0 z-0 opacity-95 md:opacity-100 pointer-events-none flex justify-end">
-                <img src="https://github.com/user-attachments/assets/26c78c7e-6820-436c-a575-543017e64dc3" alt="Usuario disfrutando la plataforma" class="w-32 sm:w-40 md:w-44 object-contain">
-            </div>
+        <!-- HEADER / BANNER NUEVO CON TU IMAGEN -->
+        <section class="w-full rounded-2xl overflow-hidden shadow-xl bg-slate-900 border border-slate-800">
+            <img src="https://raw.githubusercontent.com/Afidsidk4/imagenes-web/main/Aposta%20Y%20gana%20Chico.jpg" alt="Guía Oficial Apuestas Argentina" class="w-full h-auto object-cover block">
         </section>
 
         <!-- Operador: Betsson (Visible arriba sin hacer scroll) -->
